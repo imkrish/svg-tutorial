@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes circle-animation {
+  0% {
+    fill: blue;
+    transform: translateX(0);
+  }
+  50% {
+    fill: purple;
+    transform: translateX(50px);
+  }
+  100% {
+    fill: red;
+    transform: translateX(100px)
+  }
+}
+
+.ball {
+  animation: circle-animation 5s 1s 100 alternate ease-in-out forwards;
+}
